@@ -24,12 +24,17 @@ class Program
             // Get all elements with the specified attribute
             XmlNodeList nodes = xmlDoc.DocumentElement.SelectNodes($"//*[@{attributeName}]");
 
-            // Update the attribute value for each matching element
+            // Update the attribute value for each matching element and list the associated id
             foreach (XmlNode node in nodes)
             {
                 if (node.Attributes != null && node.Attributes[attributeName] != null)
                 {
-                    node.Attributes[attributeName].Value = attributeValue;
+                    string idValue = node.Attributes["id"]?.Value;
+                    if (!string.IsNullOrEmpty(idValue))
+                    {
+                        Console.WriteLine($"Changing state to '{attributeValue}' for id: {idValue}");
+                        node.Attributes[attributeName].Value = attributeValue;
+                    }
                 }
             }
 
