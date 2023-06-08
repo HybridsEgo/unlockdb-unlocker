@@ -14,7 +14,7 @@ class Program
 
         string xmlFilePath = args[0];
         string attributeName = "state";
-        string attributeValue = "eUnlockState_Unklocked";
+        string attributeValue = "eUnlockState_Unlocked";
 
         try
         {
