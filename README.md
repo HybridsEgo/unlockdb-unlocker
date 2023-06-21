@@ -6,4 +6,4 @@ Takes the unlockdb.xml from the data\ui directory of MCC and unlocks everything,
     - Steam location: `steamapps\common\Halo The Master Chief Collection\Data\ui`
     - Microsoft Store location: `XboxGames\Halo- The Master Chief Collection\Content\data\ui`
 - Open a command prompt and write the following command: `.\unlockdb.exe path/to/your/xml/unlockdb.xml`
-- Launch MCC with Easy Anit Cheat disabled.
+- Launch MCC with Easy Anti Cheat disabled.
